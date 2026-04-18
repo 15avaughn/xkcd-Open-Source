@@ -81,7 +81,7 @@
 
 ## Contributors
 
-- [Mike (@mamaral)](https://github.com/mamaral) - Architect of the iOS app.
+- [Mike Amaral](https://github.com/mamaral) - Architect of the iOS app.
 - [Sean Ferguson](https://github.com/fergusean) - Architect of the server that pulls content from xkcd and pushes to clients.
 - [Ryan Copley](https://github.com/RyanCopley) - CI build improvements.
 
