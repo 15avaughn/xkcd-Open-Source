@@ -12,7 +12,6 @@
 #import "ThemeManager.h"
 #import "DataManager.h"
 #import <SDWebImagePrefetcher.h>
-#import <TwitterKit/TwitterKit.h>
 #import "AltView.h"
 #import "XKCDDeviceManager.h"
 #import "ComicWebViewController.h"

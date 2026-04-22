@@ -9,9 +9,6 @@
 #import "AppDelegate.h"
 #import "ComicListViewController.h"
 #import "ThemeManager.h"
-#import <Fabric/Fabric.h>
-#import <Crashlytics/Crashlytics.h>
-#import <TwitterKit/TwitterKit.h>
 #import "XKCDDeviceManager.h"
 
 @import StoreKit;
@@ -46,7 +43,6 @@ static NSTimeInterval const kFourMonthsInSeconds = 10368000;
     self.dataManager = [DataManager sharedInstance];
     self.requestManager = [RequestManager sharedInstance];
 
-    [self setupThirdPartyLibraries];
     [self setupPushNotifications];
 
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[ComicListViewController new]];;
@@ -68,15 +64,6 @@ static NSTimeInterval const kFourMonthsInSeconds = 10368000;
         application.applicationIconBadgeNumber = 0;
     }
 }
-
-
-#pragma mark - Third-party library setup
-
-- (void)setupThirdPartyLibraries {
-    [ThemeManager setupTheme];
-    [Fabric with:@[CrashlyticsKit, TwitterKit]];
-}
-
 
 #pragma mark - Push notifications
 
