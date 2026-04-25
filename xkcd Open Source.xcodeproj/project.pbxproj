@@ -516,6 +516,7 @@
 				270C3E7D1D9777BF003CF197 /* Sources */,
 				270C3E7E1D9777BF003CF197 /* Frameworks */,
 				270C3E7F1D9777BF003CF197 /* Resources */,
+				576724E269B18EF9AC71C118 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -535,6 +536,7 @@
 				2714CCAF1B05667400ADF009 /* Frameworks */,
 				2714CCB01B05667400ADF009 /* Resources */,
 				270C3E921D9777BF003CF197 /* Embed Foundation Extensions */,
+				86BFB7A0E2570F523401379E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -554,6 +556,7 @@
 				27B9849A1B0D602D00684AA1 /* Sources */,
 				27B9849B1B0D602D00684AA1 /* Frameworks */,
 				27B9849C1B0D602D00684AA1 /* Resources */,
+				7336AADA422B3D772BE3F86C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -660,6 +663,60 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		576724E269B18EF9AC71C118 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-xkcdToday/Pods-xkcdToday-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/Realm/realm_objc_privacy.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/realm_objc_privacy.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-xkcdToday/Pods-xkcdToday-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7336AADA422B3D772BE3F86C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-xkcdOSTests/Pods-xkcdOSTests-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/Realm/realm_objc_privacy.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/realm_objc_privacy.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-xkcdOSTests/Pods-xkcdOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86BFB7A0E2570F523401379E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-xkcd Open Source/Pods-xkcd Open Source-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/Realm/realm_objc_privacy.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/realm_objc_privacy.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-xkcd Open Source/Pods-xkcd Open Source-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		99CBA7E1BC4B8E48F8651160 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
