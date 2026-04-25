@@ -275,9 +275,9 @@
     [_dataManager downloadLatestComicsWithCompletionHandler:^(NSError *error, NSInteger numberOfNewComics) {
         XCTAssertNil(error);
         XCTAssertEqual(numberOfNewComics, comics.count);
-        XCTAssertEqual([_dataManager latestComicDownloaded], latest);
+        XCTAssertEqual([self->_dataManager latestComicDownloaded], latest);
 
-        XCTAssertGreaterThanOrEqual([_dataManager allSavedComics].count, comics.count);
+        XCTAssertGreaterThanOrEqual([self->_dataManager allSavedComics].count, comics.count);
         XCTAssertNotNil([Comic objectForPrimaryKey:@"1"]);
 
         NSString *latestID = [NSString stringWithFormat:@"%ld", (long)latest];
