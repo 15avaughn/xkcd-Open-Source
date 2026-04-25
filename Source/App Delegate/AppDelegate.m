@@ -43,6 +43,7 @@ static NSTimeInterval const kFourMonthsInSeconds = 10368000;
     self.dataManager = [DataManager sharedInstance];
     self.requestManager = [RequestManager sharedInstance];
 
+    [self setupTheme];
     [self setupPushNotifications];
 
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[ComicListViewController new]];;
@@ -63,6 +64,10 @@ static NSTimeInterval const kFourMonthsInSeconds = 10368000;
     if (application.applicationIconBadgeNumber > 0) {
         application.applicationIconBadgeNumber = 0;
     }
+}
+
+- (void)setupTheme {
+    [ThemeManager setupTheme];
 }
 
 #pragma mark - Push notifications
